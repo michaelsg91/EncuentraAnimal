@@ -7,6 +7,11 @@
 	(slot nodo-no)
 )
 
+(defquery buscar-nodo
+	(declare (variables ?nombre))
+	(Nodo (nombre ?nombre)(tipo ?tipo)(pregunta ?pregunta)(respuesta ?respuesta))
+)
+
 (defrule inicio
 	(not (Nodo (nombre nodo-1)))
 	=>
