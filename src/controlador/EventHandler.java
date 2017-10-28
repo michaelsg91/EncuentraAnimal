@@ -28,7 +28,7 @@ public class EventHandler implements JessListener{
 	                            jframe.cambiarPregunta(pregunta);
 	                        }else if(tipo.equals("respuesta")){
 	                            String respuesta = nodo.getSlotValue("respuesta").stringValue(context);
-	                            vista.darRespuesta(""+respuesta);
+	                            jframe.darRespuesta(""+respuesta);
 	                        }
 	                    }
 	                } catch (JessException e) {

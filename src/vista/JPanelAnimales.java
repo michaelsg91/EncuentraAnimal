@@ -9,7 +9,7 @@ import java.awt.event.ActionListener;
 import controlador.*;
 import javax.swing.*;
 
-public class JPanelAnimales extends JPanel{
+class JPanelAnimales extends JPanel{
 	private JLabel titulo;
 	public JPanelAnimales(){
 		titulo=new JLabel("Adivina el Animal");
@@ -21,17 +21,18 @@ public class JPanelAnimales extends JPanel{
 }
 
 class JPanelMedio extends JPanel{
-	private JLabel pregunta,respuesta;
+	public JLabel pregunta,respuesta;
 	private ButtonGroup grupo;
-	private JRadioButton yes,no;
-	private JButton ok;
-	private MotorController mc;
+	public JRadioButton yes;
+	public JRadioButton no;
+	public JButton ok;
+
 	
 	public JPanelMedio(){
 		setLayout(null);
 		setFont(new Font("Kinnari",Font.BOLD,16));
 		pregunta=new JLabel("Pregunta");
-		respuesta=new JLabel("Su animal es: ");
+		respuesta=new JLabel("");
 		yes=new JRadioButton("Yes",true);
 		no=new JRadioButton("No",false);
 		
@@ -41,12 +42,12 @@ class JPanelMedio extends JPanel{
 		grupo.add(yes);
 		grupo.add(no);
 		
-		ok=new JButton("OK");
+		ok=new JButton("Aceptar");
 		
-		pregunta.setBounds(20,20,400,40);
+		pregunta.setBounds(20,20,560,40);
 		yes.setBounds(20,70,50,30);
 		no.setBounds(100,70,50,30);
-		ok.setBounds(200,70,60,30);
+		ok.setBounds(200,70,100,30);
 		respuesta.setBounds(20,150,400,40);
 		
 		pregunta.setFont(getFont());
@@ -55,20 +56,14 @@ class JPanelMedio extends JPanel{
 		yes.setFont(getFont());
 		no.setFont(getFont());
 		
-		ok.addActionListener(new ActionListener(){
-			public void actionPerformed(ActionEvent e){
-				if(yes.isSelected()){
-					
-				}else if(no.isSelected()){
-					
-				}
-			}
-		});
+		
 		
 		add(pregunta);add(yes);add(no);add(ok);add(respuesta);
 		
 		
 	}
+	
+	
 }
 
 class JPanelBajo extends JPanel{
