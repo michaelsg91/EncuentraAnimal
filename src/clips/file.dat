@@ -1,0 +1,127 @@
+(Nodo (nombre nodo-1) (tipo pregunta) (pregunta "¿Tu animal tiene una columna vertebral?") (respuesta nil) (nodo-si nodo-11) (nodo-no nodo-12))
+
+(Nodo (nombre nodo-11) (tipo pregunta) (pregunta "¿Tu animal es de sangre caliente?") (respuesta nil) (nodo-si nodo-111) (nodo-no nodo-112))
+(Nodo (nombre nodo-12) (tipo pregunta) (pregunta "¿Tu animal vive principalmente en el suelo?") (respuesta nil) (nodo-si nodo-121) (nodo-no nodo-122))
+
+(Nodo (nombre nodo-121) (tipo pregunta) (pregunta "¿Tu animal tiene un cuerpo plano?") (respuesta nil) (nodo-si nodo-1211) (nodo-no nodo-1212))
+(Nodo (nombre nodo-122) (tipo pregunta) (pregunta "¿El cuerpo del animal está en segmentos?") (respuesta nil) (nodo-si nodo-1221) (nodo-no nodo-1222))
+
+(Nodo (nombre nodo-1221) (tipo pregunta) (pregunta "¿Tu animal tiene una concha?") (respuesta nil) (nodo-si nodo-12211) (nodo-no nodo-12212))
+(Nodo (nombre nodo-1222) (tipo pregunta) (pregunta "¿Tu animal usa muchas células para digerir su comida en lugar de su estomago?") (respuesta nil) (nodo-si nodo-12221) (nodo-no nodo-12222))
+
+(Nodo (nombre nodo-12221) (tipo pregunta) (pregunta "¿Tu animal está unido permanentemente a un objeto?") (respuesta nil) (nodo-si nodo-122211) (nodo-no nodo-122212))
+(Nodo (nombre nodo-12222) (tipo pregunta) (pregunta "¿Tu animal está compuesto por más de una célula?") (respuesta nil) (nodo-si nodo-122221) (nodo-no nodo-122222))
+
+(Nodo (nombre nodo-122221) (tipo pregunta) (pregunta "¿Tu animal tiene una concha en forma de espiral?") (respuesta nil) (nodo-si nodo-1222211) (nodo-no nodo-1222212))
+(Nodo (nombre nodo-122222) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es un protozoo.") (nodo-si nil) (nodo-no nil))
+
+(Nodo (nombre nodo-1222211) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es un caracol.") (nodo-si nil) (nodo-no nil))
+(Nodo (nombre nodo-1222212) (tipo pregunta) (pregunta "¿Tu animal está protegido por dos medias conchas?") (respuesta nil) (nodo-si nodo-12222121) (nodo-no nodo-12222122))
+
+(Nodo (nombre nodo-12222121) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es una almeja/ostra.") (nodo-si nil) (nodo-no nil))
+(Nodo (nombre nodo-12222122) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es un calamar/pulpo.") (nodo-si nil) (nodo-no nil))
+
+(Nodo (nombre nodo-122211) (tipo pregunta) (pregunta "¿Tu animal normalmente tiene espinas que irradian de su cuerpo?") (respuesta nil) (nodo-si nodo-1222111) (nodo-no nodo-1222112))
+(Nodo (nombre nodo-122212) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es una medusa.") (nodo-si nil) (nodo-no nil))
+
+(Nodo (nombre nodo-1222111) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es una anémona de mar.") (nodo-si nil) (nodo-no nil))
+(Nodo (nombre nodo-1222112) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es un coral/esponja.") (nodo-si nil) (nodo-no nil))
+
+(Nodo (nombre nodo-12211) (tipo pregunta) (pregunta "¿Tu animal tiene una cola?") (respuesta nil) (nodo-si nodo-122111) (nodo-no nodo-122112))
+(Nodo (nombre nodo-12212) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es un ciempiés/milpiés/insecto.") (nodo-si nil) (nodo-no nil))
+
+(Nodo (nombre nodo-122111) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es una langosta.") (nodo-si nil) (nodo-no nil))
+(Nodo (nombre nodo-122112) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es un cangrejo.") (nodo-si nil) (nodo-no nil))
+
+(Nodo (nombre nodo-1211) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es un platelminto.") (nodo-si nil) (nodo-no nil))
+(Nodo (nombre nodo-1212) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es un gusano/sanguijuela.") (nodo-si nil) (nodo-no nil))
+
+(Nodo (nombre nodo-111) (tipo pregunta) (pregunta "¿Normalmente, la hembra de su animal alimenta a sus crias con leche?") (respuesta nil) (nodo-si nodo-1111) (nodo-no nodo-1112))
+(Nodo (nombre nodo-112) (tipo pregunta) (pregunta "¿Tu animal siempre está en el agua?") (respuesta nil) (nodo-si nodo-1121) (nodo-no nodo-1122))
+
+(Nodo (nombre nodo-1121) (tipo pregunta) (pregunta "¿Tu animal tiene un esqueleto óseo?") (respuesta nil) (nodo-si nodo-11211) (nodo-no nodo-11222))
+(Nodo (nombre nodo-1122) (tipo pregunta) (pregunta "¿Tu animal está cubierto con piel escamada?") (respuesta nil) (nodo-si nodo-11221) (nodo-no nodo-11222))
+
+(Nodo (nombre nodo-11221) (tipo pregunta) (pregunta "¿Tu animal tiene una concha redondeada?") (respuesta nil) (nodo-si nodo-112211) (nodo-no nodo-112212))
+(Nodo (nombre nodo-11222) (tipo pregunta) (pregunta "¿Tu animal salta?") (respuesta nil) (nodo-si nodo-112221) (nodo-no nodo-112222))
+
+(Nodo (nombre nodo-112221) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es una rana.") (nodo-si nil) (nodo-no nil))
+(Nodo (nombre nodo-112222) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es una salamandra.") (nodo-si nil) (nodo-no nil))
+
+(Nodo (nombre nodo-112211) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es una tortuga.") (nodo-si nil) (nodo-no nil))
+(Nodo (nombre nodo-112212) (tipo pregunta) (pregunta "¿Tu animal tiene extremidades?") (respuesta nil) (nodo-si nodo-1122121) (nodo-no nodo-1122122))
+
+(Nodo (nombre nodo-1122121) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es un cocodrilo/caimán.") (nodo-si nil) (nodo-no nil))
+(Nodo (nombre nodo-1122122) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es una serpiente.") (nodo-si nil) (nodo-no nil))
+
+(Nodo (nombre nodo-11211) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es un pez.") (nodo-si nil) (nodo-no nil))
+(Nodo (nombre nodo-11212) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es un tiburon/raya.") (nodo-si nil) (nodo-no nil))
+
+(Nodo (nombre nodo-1111) (tipo pregunta) (pregunta "¿Tu animal come carne roja?") (respuesta nil) (nodo-si nodo-11111) (nodo-no nodo-11112))
+(Nodo (nombre nodo-1112) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es un pájaro/pingüino.") (nodo-si nil) (nodo-no nil))
+
+(Nodo (nombre nodo-11111) (tipo pregunta) (pregunta "¿Tu animal puede volar?") (respuesta nil) (nodo-si nodo-111111) (nodo-no nodo-111112))
+(Nodo (nombre nodo-11112) (tipo pregunta) (pregunta "¿Tu animal tiene pezuñas?") (respuesta nil) (nodo-si nodo-111121) (nodo-no nodo-111122))
+
+(Nodo (nombre nodo-111121) (tipo pregunta) (pregunta "¿Tu animal se para en dos dedos/pezuñas por pie?") (respuesta nil) (nodo-si nodo-1111211) (nodo-no nodo-1111212))
+(Nodo (nombre nodo-111122) (tipo pregunta) (pregunta "¿Tu animal vive en el agua?") (respuesta nil) (nodo-si nodo-1111221) (nodo-no nodo-1111222))
+
+(Nodo (nombre nodo-1111221) (tipo pregunta) (pregunta "¿Tu animal desafortunadamente, es cazado comercialmente?") (respuesta nil) (nodo-si nodo-11112211) (nodo-no nodo-11112212))
+(Nodo (nombre nodo-1111222) (tipo pregunta) (pregunta "¿Tu animal tiene dientes frontales grandes?") (respuesta nil) (nodo-si nodo-11112221) (nodo-no nodo-11112222))
+
+(Nodo (nombre nodo-11112221) (tipo pregunta) (pregunta "¿Tu animal tiene orejas grandes?") (respuesta nil) (nodo-si nodo-111122211) (nodo-no nodo-111122212))
+(Nodo (nombre nodo-11112222) (tipo pregunta) (pregunta "¿Tu animal tiene una bolsa?") (respuesta nil) (nodo-si nodo-111122221) (nodo-no nodo-111122222))
+
+(Nodo (nombre nodo-111122221) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es un kanguro/koala") (nodo-si nil) (nodo-no nil))
+(Nodo (nombre nodo-111122222) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es un topo/musaraña/elefante") (nodo-si nil) (nodo-no nil))
+
+(Nodo (nombre nodo-111122211) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es un conejo") (nodo-si nil) (nodo-no nil))
+(Nodo (nombre nodo-111122212) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es una rata/ratón/ardilla/castor/puercoespín.") (nodo-si nil) (nodo-no nil))
+
+(Nodo (nombre nodo-11112211) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es una ballena") (nodo-si nil) (nodo-no nil))
+(Nodo (nombre nodo-11112212) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es un delfín/marsopa") (nodo-si nil) (nodo-no nil))
+
+(Nodo (nombre nodo-1111211) (tipo pregunta) (pregunta "¿Tu animal tiene cuernos?") (respuesta nil) (nodo-si nodo-11112111) (nodo-no nodo-11112112))
+(Nodo (nombre nodo-1111212) (tipo pregunta) (pregunta "¿Tu animal está cubierto con un recubrimiento protector?") (respuesta nil) (nodo-si nodo-11112121) (nodo-no nodo-11112122))
+
+(Nodo (nombre nodo-11112121) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es un rinoceronte") (nodo-si nil) (nodo-no nil))
+(Nodo (nombre nodo-11112122) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es un caballo/cebra") (nodo-si nil) (nodo-no nil))
+
+(Nodo (nombre nodo-11112111) (tipo pregunta) (pregunta "¿Tu animal tiene lana?") (respuesta nil) (nodo-si nodo-111121111) (nodo-no nodo-111121112))
+(Nodo (nombre nodo-11112112) (tipo pregunta) (pregunta "¿Tu animal normalmente vive en el desierto?") (respuesta nil) (nodo-si nodo-111121121) (nodo-no nodo-111121122))
+
+(Nodo (nombre nodo-111121121) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es un camello") (nodo-si nil) (nodo-no nil))
+(Nodo (nombre nodo-111121122) (tipo pregunta) (pregunta "¿Tu animal es semiacuático?") (respuesta nil) (nodo-si nodo-1111211221) (nodo-no nodo-1111211222))
+
+(Nodo (nombre nodo-1111211221) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es un hipopótamo") (nodo-si nil) (nodo-no nil))
+(Nodo (nombre nodo-1111211222) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es una jirafa") (nodo-si nil) (nodo-no nil))
+
+(Nodo (nombre nodo-111121111) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es una oveja/cabra") (nodo-si nil) (nodo-no nil))
+(Nodo (nombre nodo-111121112) (tipo pregunta) (pregunta "¿Tu animal está domesticado?") (respuesta nil) (nodo-si nodo-1111211121) (nodo-no nodo-1111211122))
+
+(Nodo (nombre nodo-1111211121) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es una vaca") (nodo-si nil) (nodo-no nil))
+(Nodo (nombre nodo-1111211122) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es un ciervo/alce/antílope") (nodo-si nil) (nodo-no nil))
+
+(Nodo (nombre nodo-111111) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es un murcielago") (nodo-si nil) (nodo-no nil))
+(Nodo (nombre nodo-111112) (tipo pregunta) (pregunta "¿Tu animal tiene un pulgar opuesto?") (respuesta nil) (nodo-si nodo-1111121) (nodo-no nodo-1111122))
+
+(Nodo (nombre nodo-1111121) (tipo pregunta) (pregunta "¿Tu animal tiene una cola prensil?") (respuesta nil) (nodo-si nodo-11111211) (nodo-no nodo-11111212))
+(Nodo (nombre nodo-1111122) (tipo pregunta) (pregunta "¿Un adulto normalmente pesa más de 400 libras?") (respuesta nil) (nodo-si nodo-11111221) (nodo-no nodo-11111222))
+
+(Nodo (nombre nodo-11111221) (tipo pregunta) (pregunta "¿Tu animal se establece en la tierra?") (respuesta nil) (nodo-si nodo-111112211) (nodo-no nodo-111112212))
+(Nodo (nombre nodo-11111222) (tipo pregunta) (pregunta "¿Tu animal tiene una cola delgada?") (respuesta nil) (nodo-si nodo-111112221) (nodo-no nodo-111112222))
+
+(Nodo (nombre nodo-111112221) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es un gato.") (nodo-si nil) (nodo-no nil))
+(Nodo (nombre nodo-111112222) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es un coyote / lobo / zorro / perro.") (nodo-si nil) (nodo-no nil))
+
+(Nodo (nombre nodo-111112211) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es un oso / tigre / león.") (nodo-si nil) (nodo-no nil))
+(Nodo (nombre nodo-111112212) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es una morsa.") (nodo-si nil) (nodo-no nil))
+
+(Nodo (nombre nodo-11111211) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es un mono") (nodo-si nil) (nodo-no nil))
+(Nodo (nombre nodo-11111212) (tipo pregunta) (pregunta "¿Tu animal casi no tiene pelo?") (respuesta nil) (nodo-si nodo-111112121) (nodo-no nodo-111112122))
+
+(Nodo (nombre nodo-111112121) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es un hombre") (nodo-si nil) (nodo-no nil))
+(Nodo (nombre nodo-111112122) (tipo pregunta) (pregunta "¿Tu animal tiene brazos largos y poderosos?") (respuesta nil) (nodo-si nodo-1111121221) (nodo-no nodo-1111121222))
+
+(Nodo (nombre nodo-1111121221) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es un orangután / gorila / chimpancé.") (nodo-si nil) (nodo-no nil))
+(Nodo (nombre nodo-1111121222) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es un babuino.") (nodo-si nil) (nodo-no nil))

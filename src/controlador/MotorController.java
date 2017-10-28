@@ -16,7 +16,7 @@ public class MotorController {
             motor = new Rete();
             
             motor.reset();
-            motor.batch("com/sistemas/clips/zoo-grafico.clp");
+            motor.batch("/clips/animales.clp");
             
         } catch (JessException ex) {
             Logger.getLogger(MotorController.class.getName()).log(Level.SEVERE, null, ex);
