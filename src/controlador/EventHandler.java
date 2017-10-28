@@ -6,6 +6,10 @@ import vista.*;
 public class EventHandler implements JessListener{
 	JFrameAnimales jframe;
 	
+	public EventHandler(JFrameAnimales jframe){
+		this.jframe=jframe;
+	}
+	
 	  public void eventHappened(JessEvent je){
 	    	int defaultMask = JessEvent.DEFRULE_FIRED;
 	        int type = je.getType();
