@@ -28,9 +28,9 @@ public class JPanelMedio extends JPanel{
 		ok=new JButton("Aceptar");
 		
 		pregunta.setBounds(20,20,560,40);
-		yes.setBounds(20,70,50,30);
-		no.setBounds(100,70,50,30);
-		ok.setBounds(200,70,100,30);
+		yes.setBounds(20,80,50,30);
+		no.setBounds(100,80,50,30);
+		ok.setBounds(230,80,100,30);
 		respuesta.setBounds(20,150,400,40);
 		
 		pregunta.setFont(getFont());

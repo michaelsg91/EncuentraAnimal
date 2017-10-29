@@ -15,6 +15,7 @@ public class JFrameAnimales extends JFrame{
 	public JPanelMedio medio;
 	public JPanelBajo bajo;
 	private MotorController motorController;
+	private int seg,pre;
     public JFrameAnimales() {
        
         setTitle("Animales");
@@ -30,27 +31,25 @@ public class JFrameAnimales extends JFrame{
 		medio=new JPanelMedio();
 		bajo=new JPanelBajo();
 		
-		
+		pre=0;
+		seg=0;
 		
 		medio.ok.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e){
 				 try{
 		              if(medio.yes.isSelected() || medio.ok.getText().equals("Otra vez")){
 		                motorController.afirmar("(respuesta si)");
-		                    
 
 		              }else if(medio.no.isSelected()){
 		                motorController.afirmar("(respuesta no)");
 		              }
 		              
 			        }catch(JessException ex){
-			                Logger.getLogger(JFrameAnimales.class.getName()).log(Level.SEVERE, null, ex);
+			          Logger.getLogger(JFrameAnimales.class.getName()).log(Level.SEVERE, null, ex);
 			        }
 			}
 		});
-		
-		//bajo.reiniciar();
-		
+				
 		add(titulo,BorderLayout.NORTH);
 		add(medio,BorderLayout.CENTER);
 		add(bajo,BorderLayout.SOUTH);
@@ -65,6 +64,7 @@ public class JFrameAnimales extends JFrame{
         medio.yes.setVisible(true);
         medio.ok.setText("Aceptar");
         medio.respuesta.setText("");
+        pre++;
     }
     
     public void darRespuesta(String respuesta){
@@ -73,6 +73,10 @@ public class JFrameAnimales extends JFrame{
         medio.ok.setText("Otra vez");
         medio.respuesta.setText(respuesta);
         bajo.parar();
+        seg=bajo.min*60+bajo.seg;
+        bajo.saca_puntaje(seg, pre/2);
+        System.out.println(seg+",pre: "+pre);
+        pre=0;
     }
 
 
