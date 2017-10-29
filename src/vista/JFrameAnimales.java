@@ -11,9 +11,9 @@ import controlador.*;
 
 public class JFrameAnimales extends JFrame{
 	 
-    private JPanelAnimales titulo;
+    private JPanelAlto titulo;
 	public JPanelMedio medio;
-	private JPanelBajo bajo;
+	public JPanelBajo bajo;
 	private MotorController motorController;
     public JFrameAnimales() {
        
@@ -26,7 +26,7 @@ public class JFrameAnimales extends JFrame{
 		pack();
 		setLocationRelativeTo(null);
 		
-		titulo=new JPanelAnimales();
+		titulo=new JPanelAlto();
 		medio=new JPanelMedio();
 		bajo=new JPanelBajo();
 		
@@ -35,18 +35,21 @@ public class JFrameAnimales extends JFrame{
 		medio.ok.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e){
 				 try{
-			            if(medio.yes.isSelected() || medio.ok.getText().equals("Otra vez")){
-			                    motorController.afirmar("(respuesta si)");
+		              if(medio.yes.isSelected() || medio.ok.getText().equals("Otra vez")){
+		                motorController.afirmar("(respuesta si)");
+		                    
 
-			            }else if(medio.no.isSelected()){
-			                motorController.afirmar("(respuesta no)");
-			            }
-			            
-			        } catch (JessException ex) {
+		              }else if(medio.no.isSelected()){
+		                motorController.afirmar("(respuesta no)");
+		              }
+		              
+			        }catch(JessException ex){
 			                Logger.getLogger(JFrameAnimales.class.getName()).log(Level.SEVERE, null, ex);
-			            }
+			        }
 			}
 		});
+		
+		//bajo.reiniciar();
 		
 		add(titulo,BorderLayout.NORTH);
 		add(medio,BorderLayout.CENTER);
@@ -69,6 +72,7 @@ public class JFrameAnimales extends JFrame{
         medio.yes.setVisible(false);
         medio.ok.setText("Otra vez");
         medio.respuesta.setText(respuesta);
+        bajo.parar();
     }
 
 

@@ -25,13 +25,18 @@ public class EventHandler implements JessListener{
 	                    QueryResult qr=rete.runQueryStar("buscar-nodo",new ValueVector().add(slotV));
 	                    qr.next();                 
                     
-                        String tipo = qr.getString("tipo");
+                        String tipo=qr.getString("tipo");
+                        String nombre_nodo=qr.getString("nombre");
                         if (tipo.equals("pregunta")){
                             String pregunta=qr.getString("pregunta");
                             jframe.cambiarPregunta(pregunta);
                         }else if(tipo.equals("respuesta")){
                             String respuesta=qr.getString("respuesta");
-                            jframe.darRespuesta(""+respuesta);
+                            jframe.darRespuesta(""+respuesta);                        
+                        }
+                        
+                        if(nombre_nodo.equals("nodo-1")){
+                        	jframe.bajo.reiniciar();
                         }
                    
 	                } catch (JessException e) {
