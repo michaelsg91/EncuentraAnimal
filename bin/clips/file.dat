@@ -36,7 +36,7 @@
 (Nodo (nombre nodo-1211) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es un platelminto.") (nodo-si nil) (nodo-no nil))
 (Nodo (nombre nodo-1212) (tipo respuesta) (pregunta nil) (respuesta "Creo que tu animal es un gusano/sanguijuela.") (nodo-si nil) (nodo-no nil))
 
-(Nodo (nombre nodo-111) (tipo pregunta) (pregunta "¿Normalmente, la hembra de su animal alimenta a sus crias con leche?") (respuesta nil) (nodo-si nodo-1111) (nodo-no nodo-1112))
+(Nodo (nombre nodo-111) (tipo pregunta) (pregunta "¿Normalmente, la hembra de su animal alimenta a sus crías con leche?") (respuesta nil) (nodo-si nodo-1111) (nodo-no nodo-1112))
 (Nodo (nombre nodo-112) (tipo pregunta) (pregunta "¿Tu animal siempre está en el agua?") (respuesta nil) (nodo-si nodo-1121) (nodo-no nodo-1122))
 
 (Nodo (nombre nodo-1121) (tipo pregunta) (pregunta "¿Tu animal tiene un esqueleto óseo?") (respuesta nil) (nodo-si nodo-11211) (nodo-no nodo-11222))
